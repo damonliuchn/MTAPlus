@@ -1,5 +1,5 @@
 # MTAPlus
-MTA(腾讯移动分析) Android SDK 封装: 包含Maven引用即可，不用关心AndroidManifest里的配置和Proguard混淆。
+MTA(腾讯移动分析) Android SDK 封装: Maven引用即可，不用关心AndroidManifest里的配置和Proguard混淆。
 ##使用
 ###一、配置
 ```goovy
