@@ -35,7 +35,7 @@ MTAPlus.init("appKey", "channel");
 ###三、其他使用
 
 ```java
-	//页面统计
+		//页面统计
         @Override
         protected void onResume () {
         	super.onResume();
@@ -46,11 +46,11 @@ MTAPlus.init("appKey", "channel");
         	super.onPause();
         	StatService.onPause(this);
     	}
-	//自定义事件
+		//自定义事件
         StatService.trackCustomEvent(this, "onCreate", "");
 	
-	//用户反馈
-	reportAccount(Context var0, StatAccount var1)
+		//用户反馈
+		reportAccount(Context var0, StatAccount var1)
 
         //自定义上传Exception
         try {
