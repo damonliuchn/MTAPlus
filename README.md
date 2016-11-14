@@ -48,6 +48,9 @@ MTAPlus.init("appKey", "channel");
     	}
 	//自定义事件
         StatService.trackCustomEvent(this, "onCreate", "");
+	
+	//用户反馈
+	reportAccount(Context var0, StatAccount var1)
 
         //自定义上传Exception
         try {
