@@ -49,8 +49,12 @@ MTAPlus.init("appKey", "channel");
 		//自定义事件
         StatService.trackCustomEvent(this, "onCreate", "");
 	
-		//用户反馈
-		reportAccount(Context var0, StatAccount var1)
+		//上报用户反馈和截屏文件
+		postFeedBackFiles(Context context,String strContent, String strScreenshotFileName,StatFBDispatchCallback cb)
+		//获取反馈消息列表
+		getFeedBackMessage(Context context,int offset,int numLine,StatFBDispatchCallback cb)
+		//回复当前反馈消息
+		replyFeedBackMessage(Context context, String fbId, String content, StatFBDispatchCallback cb)
 
         //自定义上传Exception
         try {
