@@ -11,12 +11,12 @@ allprojects {
 	}
 
 	dependencies {
-	        compile 'com.github.MasonLiuChn:MTAPlus:2.2.1.0'
+	        compile 'com.github.MasonLiuChn:MTAPlus:2.3.0.0'
 	}
 ```
 
 ```java
-MTAPlus.init("appKey", "channel");
+MTAPlus.init(context,"appKey", "channel");
 ```
 ###二、应用方单独配置
 

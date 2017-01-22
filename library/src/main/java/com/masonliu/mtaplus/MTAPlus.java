@@ -1,6 +1,9 @@
 package com.masonliu.mtaplus;
 
+import android.content.Context;
 import android.text.TextUtils;
+
+import com.tencent.stat.StatService;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -10,7 +13,8 @@ import java.lang.reflect.Method;
  */
 
 public class MTAPlus {
-    public static void init(String appKey, String channel) {
+    public static void init(Context context, String appKey, String channel) {
+        StatService.setContext(context.getApplicationContext());
         com.tencent.stat.StatConfig.setAppKey(appKey);
         if (!TextUtils.isEmpty(channel)) {
             com.tencent.stat.StatConfig.setInstallChannel(channel);
