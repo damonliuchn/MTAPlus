@@ -1,7 +1,7 @@
 # MTAPlus
 MTA(腾讯移动分析) Android SDK 封装: Maven引用即可，不用关心AndroidManifest里的配置和Proguard混淆。
-##使用
-###一、配置
+## 使用
+### 一、配置
 ```goovy
 allprojects {
 		repositories {
@@ -18,7 +18,7 @@ allprojects {
 ```java
 MTAPlus.init(context,"appKey", "channel");
 ```
-###二、应用方单独配置
+### 二、应用方单独配置
 
 1、
 ```java
@@ -32,7 +32,7 @@ MTAPlus.init(context,"appKey", "channel");
 
 2、自行配置libMtaNativeCrash.so
 
-###三、其他使用
+### 三、其他使用
 
 ```java
 		//页面统计
