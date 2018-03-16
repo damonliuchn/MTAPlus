@@ -163,6 +163,7 @@ MTAPlus.init(context,"appKey", "channel");
 
 
         // 获取在线参数onlineKey
+	StatConfig.init(context);
         String onlineValue = StatConfig.getCustomProperty("onlineKey", "off");
         if (onlineValue.equalsIgnoreCase("on")) {
             // do something
